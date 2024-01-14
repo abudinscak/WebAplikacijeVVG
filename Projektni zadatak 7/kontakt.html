@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projekt Web aplikacije">
+    <meta name="keywords" content="projekt, web, aplikacije, stranica">
+    <meta name="author" content="Antonio Budinšćak">
+    <title>David Goggins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/banner.jpg" alt="david goggins banner">
+    </header>
+
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#">O nama</a>
+        <a href="#">Galerija</a>
+    </nav>
+
+    <main>
+		<h1>Kontaktna forma</h1>
+		<div id="kontakt">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11123.878283585593!2d15.8957538!3d45.8118678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d1116a6bb4e3%3A0x575b4a4ff1dc0b3c!2sVrap%C4%8De%2C%2010090%2C%20Stenjevec%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1705186135525!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<form action="https://bolnica-vrapce.hr/kako-do-nas/" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">Ime *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Vaše ime.." required>
+
+				<label for="lname">Prezime *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Vaše prezime.." required>
+				
+				<label for="lname">E-mail adresa *</label>
+				<input type="email" id="email" name="email" placeholder="Vaša e-mail adresa.." required>
+
+				<label for="country">Država</label>
+				<select id="country" name="country">
+				  <option value="">Odaberi...</option>
+					<option value="BE">Belgija</option>
+					<option value="HR" selected>Hrvatska</option>
+					<option value="LU">Luxembourg</option>
+					<option value="HU">Mađarska</option>
+					<option value="BA">Bosna i Hercegovina</option>
+					<option value="RS">Srbija</option>
+					<option value="SI">Slovenija</option>
+				</select>
+
+				<label for="subject">Predmet</label>
+				<textarea id="subject" name="subject" placeholder="Napišite nešto.."></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</main>
+	
+	<footer>
+		<p>Copyright &copy; 2024 Antonio Budinšćak. <a href="https://github.com/abudinscak?tab=repositories"><img src="img/github.png" title="Github" alt="Github"></a></p>
+	</footer>
+
+</body>
+
+</html>
